@@ -61,10 +61,10 @@ def CoffeeChoice(choice, money= 0.0):
             if money - MENU[choice]['cost'] > 0:
                 print(f"Here is your change {round(money-MENU[choice]['cost'],2)}")
                 print(f"Here is your {choice}. Enjoy!")
-            else:
-                print("Sorry that's not enough money. Money refunded")
         else:
-            print("Insufficient resources.")
+            print("Sorry that's not enough money. Money refunded")
+    else:
+        print("Insufficient resources.")
 
 
 while True:
